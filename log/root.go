@@ -22,3 +22,4 @@ func SetDefault(l Logger) {
 	defer rootLock.Unlock()
 
 	root = l
+}
