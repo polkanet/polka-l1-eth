@@ -17,3 +17,8 @@ func initializeRoot() {
 	}
 }
 
+func SetDefault(l Logger) {
+	rootLock.Lock()
+	defer rootLock.Unlock()
+
+	root = l
